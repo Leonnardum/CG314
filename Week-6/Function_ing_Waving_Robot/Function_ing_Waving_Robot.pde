@@ -52,7 +52,16 @@ void draw () {
   
   drawEyes();
   
-      if (mousePressed && mouseX < head+225 && mouseX >head+200 && mouseY < head && mouseY > head-80) {
+riangle(head+75, head+55, head+175, head+55, head+125, head+125);
+  }
+  
+  drawAntena();
+  
+  drawButtons();
+  
+  drawGland();
+  
+        if (mousePressed && mouseX < head+225 && mouseX >head+200 && mouseY < head && mouseY > head-80) {
     image(anger, head+270, head+50);
     image(anger2, head-220, head+50);
     strokeWeight(2);
@@ -68,14 +77,7 @@ void draw () {
     rect(200, 320, 160, 10);
     rect(head+100, head+200, 50, 15);
     fill(255, 50, 50);
-    triangle(head+75, head+55, head+175, head+55, head+125, head+125);
-  }
-  
-  drawAntena();
-  
-  drawButtons();
-  
-  drawGland();
+    t
   
 }
 
